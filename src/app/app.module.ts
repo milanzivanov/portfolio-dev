@@ -3,19 +3,35 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
-  ],
+    HttpModule,
+
+    RouterModule.forRoot([
+       {
+         path: 'header',
+         component: HeaderComponent
+       },
+        {
+          path: 'content',
+          component: ContentComponent
+        }
+     ])
+],
+
   providers: [],
   bootstrap: [AppComponent]
 })
