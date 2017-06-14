@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +9,10 @@ export class HeaderComponent implements OnInit {
 
   headerTitle = 'Welcome to the header component bro...';
 
-  data = (
-    {
-      name: 'Milan',
-      status: 'junior'
-    }
-  )
+  @Output() onTesting = new EventEmitter();
+  fireTestEvent(e) {
+    this.onTesting.emit(e);
+  }
 
   constructor() { }
 

@@ -8,4 +8,11 @@ import  {HeaderComponent} from './header/header.component'
 })
 export class AppComponent {
   title = 'app working!!!';
+
+  // custom event binding
+  test(e) {
+    alert("Testing custom event binding");
+    console.log(e);
+  }
+
 }
