@@ -21,15 +21,18 @@ import { ContentComponent } from './content/content.component';
     HttpModule,
 
     RouterModule.forRoot([
-       {
-         path: 'header',
-         component: HeaderComponent
-       },
-        {
-          path: 'content',
-          component: ContentComponent
-        }
-     ])
+      {
+        path: '', redirectTo: 'header', pathMatch: 'full'
+      },
+      {
+        path: 'header',
+        component: HeaderComponent
+      },
+      {
+        path: 'content',
+        component: ContentComponent
+      }
+   ])
 ],
 
   providers: [],
