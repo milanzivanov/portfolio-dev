@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +9,8 @@ export class HeaderComponent implements OnInit {
 
   headerTitle = 'Welcome to the header component bro...';
 
-  data = (
-    {
-      name: 'Milan',
-      status: 'junior'
-    }
-  )
+  // custom property binding @Input
+  @Input() test;
 
   constructor() { }
 

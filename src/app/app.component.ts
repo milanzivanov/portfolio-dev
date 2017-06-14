@@ -8,4 +8,12 @@ import  {HeaderComponent} from './header/header.component'
 })
 export class AppComponent {
   title = 'app working!!!';
+
+  // custum property binding @Input
+  test = {
+    name: 'Milan',
+    status: 'Junior',
+    age: 34
+  }
+
 }
