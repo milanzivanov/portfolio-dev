@@ -9,10 +9,16 @@
 
 
 <h2>*ngFor listing</h2>
+
+<form>
+  <label>Filter list by name:</label>
+   <!-- <input type="text" [(ngModel)]="term" [ngModelOptions]="{standalone: true}" /> -->
+   <input type="text" [(ngModel)]="term" name="name">
+</form>
 <ul>
-  <li *ngFor='let list of listing'>
+  <li *ngFor='let list of listing | filter:term'>
     <a href="#">
-      {{list.name | uppercase}} - {{list.age}}
+      {{list.name}} - {{list.age}}
     </a>
     <span [ngStyle]='{background: list.belt}'>{{list.belt}}</span>
   </li>

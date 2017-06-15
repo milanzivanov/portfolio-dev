@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import  { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-header',
@@ -23,10 +24,16 @@ export class HeaderComponent implements OnInit {
       belt: 'yellow'
     },
     {
-      name: 'Dunja',
+      name: 'Dunja Meduza',
       age: 25,
       belt: 'blue'
+    },
+    {
+      name: 'Milica Pajser',
+      age: 27,
+      belt: 'orange'
     }
+
   ]
 
   constructor() { }
