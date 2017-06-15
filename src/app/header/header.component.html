@@ -6,3 +6,14 @@
 
 <p>{{data.name}}</p>
 <p>{{data.status}}</p>
+
+
+<h2>*ngFor listing</h2>
+<ul>
+  <li *ngFor='let list of listing'>
+    <a href="#">
+      {{list.name}} - {{list.age}}
+    </a>
+    <span [ngStyle]='{background: list.belt}'>{{list.belt}}</span>
+  </li>
+</ul>

@@ -16,6 +16,19 @@ export class HeaderComponent implements OnInit {
     }
   )
 
+  listing = [
+    {
+      name: 'Ivan Grozni',
+      age: 34,
+      belt: 'yellow'
+    },
+    {
+      name: 'Dunja',
+      age: 25,
+      belt: 'blue'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {
