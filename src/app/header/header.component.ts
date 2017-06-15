@@ -16,6 +16,11 @@ export class HeaderComponent implements OnInit {
     }
   )
 
+  // directives
+  classes = {'blue': true, 'red': false, 'underline': false};
+
+  test123 = true;
+
   constructor() { }
 
   ngOnInit() {

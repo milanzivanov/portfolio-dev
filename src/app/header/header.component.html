@@ -6,3 +6,18 @@
 
 <p>{{data.name}}</p>
 <p>{{data.status}}</p>
+
+<!-- one way -->
+<!-- <p [ngClass]="{'blue': true, 'red': false, 'underline': true}">
+  content work i geas
+</p> -->
+
+<!-- second way -->
+<p [ngClass]="classes">
+  content work i geas
+</p>
+
+<!-- structual directives -->
+<p *ngIf="true">
+  Tekst bla bla i bla
+</p>
